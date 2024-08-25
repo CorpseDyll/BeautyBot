@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.BeautyBotBackend.controller.RegisterController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="700.0" prefWidth="700.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="250.0" prefWidth="700.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="244.0" fitWidth="247.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/RegisterLogo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <VBox alignment="TOP_CENTER" prefHeight="450.0" prefWidth="350.0">
+               <children>
+                  <Label text="Escribe tu nombre completo" textFill="#400135">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="-439.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="nameField" promptText="Nombre completo">
+                     <font>
+                        <Font name="SansSerif Regular" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="19.0" right="20.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Escribe tu número de cédula" textFill="#400135">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="-434.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="idField" promptText="Número de cédula">
+                     <font>
+                        <Font name="SansSerif Regular" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="19.0" right="20.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Escribe tu número de teléfono" textFill="#400135">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="-422.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="phoneField" promptText="Numero de teléfono">
+                     <font>
+                        <Font name="SansSerif Regular" size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Escribe tu correo electrónico" textFill="#400135">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="-431.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="emailField" promptText="Correo electrónico">
+                     <font>
+                        <Font name="SansSerif Regular" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" right="19.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Escribe tu contraseña" textFill="#400135">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="-484.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <PasswordField fx:id="passwordField" promptText="Contraseña">
+                     <VBox.margin>
+                        <Insets left="21.0" right="19.0" top="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="SansSerif Regular" size="16.0" />
+                     </font>
+                  </PasswordField>
+                  <HBox alignment="CENTER" prefHeight="109.0" prefWidth="700.0">
+                     <children>
+                        <Button fx:id="backButton" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="28.0" prefWidth="136.0" style="-fx-background-color: #7E005C;" text="Atrás" textFill="#ffd3ee">
+                           <font>
+                              <Font name="SansSerif Regular" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Label prefHeight="17.0" prefWidth="286.0" />
+                        <Button fx:id="registerButton" mnemonicParsing="false" onAction="#onRegisterButtonClick" prefHeight="33.0" prefWidth="152.0" style="-fx-background-color: ffbbe0;" text="Registrarse" textFill="#7e005c">
+                           <font>
+                              <Font name="SansSerif Regular" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
